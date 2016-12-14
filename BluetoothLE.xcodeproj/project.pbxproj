@@ -12,9 +12,13 @@
 		1B8A80361DFE6877002586FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B8A80341DFE6877002586FA /* Main.storyboard */; };
 		1B8A80381DFE6877002586FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B8A80371DFE6877002586FA /* Assets.xcassets */; };
 		1B8A803B1DFE6877002586FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B8A80391DFE6877002586FA /* LaunchScreen.storyboard */; };
+		1B8A80441DFE6902002586FA /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B8A80431DFE6902002586FA /* CoreBluetooth.framework */; };
+		1B8A80461DFE8123002586FA /* BLEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A80451DFE8123002586FA /* BLEViewController.swift */; };
+		DAF8468C2C5CBD302B07C5DC /* Pods_BluetoothLE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC297967ABF19E795687D3D4 /* Pods_BluetoothLE.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A0D944E1C0BCEED04337FCC /* Pods-BluetoothLE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BluetoothLE.release.xcconfig"; path = "Pods/Target Support Files/Pods-BluetoothLE/Pods-BluetoothLE.release.xcconfig"; sourceTree = "<group>"; };
 		1B8A802D1DFE6877002586FA /* BluetoothLE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluetoothLE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B8A80301DFE6877002586FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B8A80321DFE6877002586FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,10 @@
 		1B8A80371DFE6877002586FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B8A803A1DFE6877002586FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B8A803C1DFE6877002586FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B8A80431DFE6902002586FA /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		1B8A80451DFE8123002586FA /* BLEViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEViewController.swift; sourceTree = "<group>"; };
+		934FC92817B4D6F126509DF3 /* Pods-BluetoothLE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BluetoothLE.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BluetoothLE/Pods-BluetoothLE.debug.xcconfig"; sourceTree = "<group>"; };
+		EC297967ABF19E795687D3D4 /* Pods_BluetoothLE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BluetoothLE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B8A80441DFE6902002586FA /* CoreBluetooth.framework in Frameworks */,
+				DAF8468C2C5CBD302B07C5DC /* Pods_BluetoothLE.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +50,8 @@
 			children = (
 				1B8A802F1DFE6877002586FA /* BluetoothLE */,
 				1B8A802E1DFE6877002586FA /* Products */,
+				1B8A80421DFE6902002586FA /* Frameworks */,
+				29B3BEAE6F2C699FDEB680CF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +72,27 @@
 				1B8A80371DFE6877002586FA /* Assets.xcassets */,
 				1B8A80391DFE6877002586FA /* LaunchScreen.storyboard */,
 				1B8A803C1DFE6877002586FA /* Info.plist */,
+				1B8A80451DFE8123002586FA /* BLEViewController.swift */,
 			);
 			path = BluetoothLE;
+			sourceTree = "<group>";
+		};
+		1B8A80421DFE6902002586FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B8A80431DFE6902002586FA /* CoreBluetooth.framework */,
+				EC297967ABF19E795687D3D4 /* Pods_BluetoothLE.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		29B3BEAE6F2C699FDEB680CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				934FC92817B4D6F126509DF3 /* Pods-BluetoothLE.debug.xcconfig */,
+				1A0D944E1C0BCEED04337FCC /* Pods-BluetoothLE.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B8A803F1DFE6877002586FA /* Build configuration list for PBXNativeTarget "BluetoothLE" */;
 			buildPhases = (
+				667D02160A33DD1A49ACECA3 /* [CP] Check Pods Manifest.lock */,
 				1B8A80291DFE6877002586FA /* Sources */,
 				1B8A802A1DFE6877002586FA /* Frameworks */,
 				1B8A802B1DFE6877002586FA /* Resources */,
+				8B7DF1AD75B86E750D7D44AB /* [CP] Embed Pods Frameworks */,
+				60D03A0D5D1D3F00965DAE99 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,11 +166,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		60D03A0D5D1D3F00965DAE99 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BluetoothLE/Pods-BluetoothLE-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		667D02160A33DD1A49ACECA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8B7DF1AD75B86E750D7D44AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BluetoothLE/Pods-BluetoothLE-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1B8A80291DFE6877002586FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B8A80461DFE8123002586FA /* BLEViewController.swift in Sources */,
 				1B8A80331DFE6877002586FA /* ViewController.swift in Sources */,
 				1B8A80311DFE6877002586FA /* AppDelegate.swift in Sources */,
 			);
@@ -259,6 +342,7 @@
 		};
 		1B8A80401DFE6877002586FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 934FC92817B4D6F126509DF3 /* Pods-BluetoothLE.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P8UA8U949L;
@@ -272,6 +356,7 @@
 		};
 		1B8A80411DFE6877002586FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A0D944E1C0BCEED04337FCC /* Pods-BluetoothLE.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P8UA8U949L;
@@ -302,6 +387,7 @@
 				1B8A80411DFE6877002586FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
